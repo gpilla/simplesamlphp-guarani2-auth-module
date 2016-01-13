@@ -17,7 +17,7 @@ En el archivo {ruta al simplesamlphp}/config/authsources.php, agregar las siguie
 
 $config = array(
 
-    ...
+    // ... algo antes ...
 
     'guarani' => array(
         'guarani:GuaraniAuth',
@@ -28,8 +28,31 @@ $config = array(
         'server' => 'descripcionServerDelInformix',
     ),
 
-    ...
+    // ... algo despues ...
 
 );
+
+```
+
+Nota: Esta ultima configuración puede repetirse para tener multilpes instancias de Guarani (en caso de facultades, o en casos de ambientes de producción y testing)
+
+Probar la autenticación desde la pantalla de tests, y configurar en {ruta al simplesamlphp}/metadata/saml20-idp-hosted.php
+
+```php
+<?php
+
+    $metadata['__DYNAMIC:1__'] = array(
+
+        // ... algo antes ...
+
+        /*
+         * Authentication source to use. Must be one that is configured in
+         * 'config/authsources.php'.
+         */
+        'auth' => 'guarani',
+
+        // ... algo despues ...
+
+    );
 
 ```
