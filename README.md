@@ -2,7 +2,7 @@
 
 Modulo de autenticación contra base [SIU-Guaraní 2](http://www.siu.edu.ar/siu-guarani/) para [SimpleSAMLphp](https://simplesamlphp.org/).
 
-A pesar de que el SIU-Guarani 2 tiene un futuro acotado, y se recomienda migrar a SIU-Guarani 3, comparto esta pieza de código que estuvo funcionando con exito algunos meses.
+A pesar de que el SIU-Guarani 2 tiene un futuro acotado, y se recomienda migrar a SIU-Guarani 3, comparto esta pieza de código que estuvo funcionando con exito algunos meses. Tambien está disponible la versión para SIU-Guaraní 3 (https://github.com/gpilla/simplesamlphp-guarani3-auth-module)
 
 ## Instalación
 
